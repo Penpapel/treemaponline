@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Screen 3-Level Nested Treemap</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #treemap {
+            width: 95%; /* Added white space around the treemap */
+            height: 95%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .leaf {
+            stroke: #fff;
+            rx: 15; /* Rounded corners */
+            ry: 15;
+        }
+
+        .label {
+            font-size: 14px;
+            font-weight: bold;
+            fill: #000;
+        }
+    </style>
+</head>
+<body>
+    <div id="treemap"></div>
+
+    <!-- D3.js Library -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    
+    <!-- Your Treemap JS Script -->
+    <script src="treemap.js"></script>
+</body>
+</html>
